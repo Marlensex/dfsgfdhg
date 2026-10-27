@@ -1,0 +1,203 @@
+Переменная 
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "RU");
+	
+	int a, b, f;
+	std::cout << "5+3 : ";
+	std::cin >> a;
+
+	std::cout << "8+3 : ";
+	std::cin >> b;
+
+	std::cout << "11+5 : ";
+	std::cin >> f;
+
+	std::cout << "A:" << a << " B:" << b << " F:"
+Типы данных
+short num1 = 7; // 2 byte / -32k - 32k
+int num2 = 5; // 4 byte / -2B - 2B
+long num3 = 6; // 8 byte / Full
+
+unsigned short num4 = 7; // 2 byte / 0 - 65k
+unsigned int num5 = 5; // 4 byte / 0 - 4B
+unsigned long num6 = 6; // 8 byte / 0 - Full
+
+// Числа с точкой
+float num7 = 5.893456f;
+double num8 = 454.32343432f;
+
+// Хранение символа
+char sym = 'q'; 
+
+// Логический тип данных
+bool ishappy = true;
+bool ishappyq = false;
+
+
+if+else
+#include <iostream>
+#include <windows.h>
+
+int main() {
+	SetConsoleOutputCP(CP_UTF8);
+
+	int num;
+	std::cout << "Секретная кодировка, в случае неправильного кода вы будете заблокированы: ";
+	std::cin >> num;
+
+	bool is_has_car = true;
+	if (num > 26 && is_has_car == true) {                               // &&-и,||-или
+		std::cout << "Секретная кодировка успешно пройдена!";
+		if (num == 28) {
+			std::cout << "Привет от fleerq0";
+		}
+	}
+	else if (num == 2) {
+		std::cout << "не правильно";
+	}
+	else {
+		std::cout << "Братишка,пизда тебе";
+	}
+	
+	
+	
+	return 0;
+}
+
+
+Switch+case
+
+
+#include <iostream>
+#include <windows.h>
+
+int main() {
+	SetConsoleOutputCP(CP_UTF8);
+
+	int num;
+	std::cin >> num;
+
+	switch (num) {
+	case 5:
+
+		std::cout << "Num is 5";
+		break;
+	case 50:
+
+		std::cout << "Num is 50";
+		break;
+	default:
+		std::cout << "Это платно!";
+
+
+
+
+КАЛЬКУЛЯТОР
+
+
+
+
+#include <iostream>
+#include <windows.h>
+#include <time.h>
+
+using namespace std;
+
+int main() {
+	SetConsoleOutputCP(CP_UTF8);
+	srand(time(NULL));
+
+	int result = 1 + rand() % 20;
+	cout << result << endl;
+
+
+	float num1, num2, res;
+	cout << "Enter num1: ";
+	cin >> num1;
+
+	cout << "Enter num2: ";
+	cin >> num2;
+
+	// +,-,*, /
+	char math;
+	cout << "Enter math symbol: ";
+	cin >> math;
+
+	/*if (math == '+')
+		res = num1 + num2;
+
+	else if (math == '-')
+		res = num1 + num2;
+
+	else if (math == '*')
+		res = num1 + num2;
+
+	else if (math == '/')
+		res = num1 / num2;*/
+
+	switch (math) {
+	case '+': res = num1 + num2; break;
+	case '-': res = num1 - num2; break;
+	case '*': res = num1 * num2; break;
+	case '/': res = num1 / num2; break;
+	default: res = 0; 
+		cout << "Error";
+		break;
+
+
+	}
+
+	cout << "Result: " << res << endl;
+
+	// Остаток при делении
+	int a = 10, b = 3, z;
+	z = a % b;
+	cout << z;
+
+	// Сокращенные операции
+	a /=  5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
